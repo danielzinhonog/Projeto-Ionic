@@ -1,0 +1,17 @@
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar style="text-align: center;" color="secondary">
+      <ion-title><strong>LISTA DE COMPRAS</strong></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button expand="full" color="secondary" routerLink="/criar-lista"><strong>Cadastre um Produto</strong></ion-button>
+    <h1><strong>Produtos Cadastrados:</strong></h1>
+    <ion-list *ngFor="let produto of produtos">
+      <ion-item>
+        <ion-label>Produto: {{ produto.produto }} <br> Quantidade: {{ produto.quantidade }}</ion-label>
+        <ion-button color="secondary" (click)="deletar(produto.id)"><strong>Excluir</strong></ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</div>

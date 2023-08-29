@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+<ion-toolbar mode="ios" color="secondary">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Criar Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+<form #form="ngForm" (ngSubmit)="cadastro(form)">
+  <br><br>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Produtos" labelPlacement="floating" placeholder="Escreva o nome do item" name="produto" ngModel></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Quantidade" labelPlacement="floating" placeholder="Escreva a quantidade/peso do item" name="quantidade" ngModel></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button shape="round"class="btn btn-primary mt-3" type="submit" color="secondary" >{{ nameButton }}</ion-button>
+</form>
+  </ion-content>

@@ -1,0 +1,24 @@
+{
+  "lista": [
+    {
+      "produto": "Ovo",
+      "quantidade": "12",
+      "id": 2
+    },
+    {
+      "produto": "Leite",
+      "quantidade": "1L",
+      "id": 3
+    },
+    {
+      "produto": "Molho Inglês",
+      "quantidade": "12ml",
+      "id": 4
+    },
+    {
+      "produto": "Arroz",
+      "quantidade": "2Kg",
+      "id": 5
+    }
+  ]
+}
